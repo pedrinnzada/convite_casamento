@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convite de Casamento — Ana & Lucas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">´
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Particles canvas -->
+<canvas id="particles"></canvas>
+
+<!-- ═══════════════════════════════════════════
+     TELA INICIAL — ENVELOPE
+════════════════════════════════════════════ -->
+<section id="intro">
+  <p class="intro-text">Você recebeu um convite especial…</p>
+  <div class="envelope-wrap" id="envelopeWrap">
+    <div class="envelope" id="envelope">
+      <div class="env-body">
+        <div class="env-bottom-crease"></div>
+        <div class="env-seal">♡</div>
+      </div>
+      <div class="env-flap"></div>
+    </div>
+  </div>
+  <p class="env-click-hint">Clique para abrir</p>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTEÚDO PRINCIPAL
+════════════════════════════════════════════ -->
+<div id="main-content">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-ornament"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Convidamos você para o nosso casamento</p>
+      <h1 class="hero-names reveal">
+        Ana<em class="hero-amp">&</em>Lucas
+      </h1>
+      <div class="hero-line reveal reveal-delay-2"></div>
+      <p class="hero-sub reveal reveal-delay-3">14 de junho de 2025 — Belo Horizonte, MG</p>
+    </div>
+    <div class="scroll-cue reveal" id="scrollCue">
+      <span>Rolar</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- FOTO -->
+  <section id="foto">
+    <div class="foto-grid reveal">
+      <div class="photo-frame">
+        <img src="ftcasal.jpg" alt="Foto do casal">
+      </div>
+      <div>
+        <p class="section-label">Nossa história</p>
+        <h2 class="section-title" style="color:var(--cream);margin-bottom:1.5rem;">
+          Dois caminhos,<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-light);">uma só estrada.</em>
+        </h2>
+        <div class="gold-rule" style="margin:1.5rem 0;"></div>
+        <p style="color:var(--text-light);line-height:1.9;font-size:.95rem;">
+          Depois de tanto tempo juntos, de muitas risadas, algumas discussões sobre o controle remoto e um cachorro que acha que é dono da cama — chegou a hora de tornar oficial o que já era real.
+        </p>
+        <p style="color:var(--text-light);line-height:1.9;font-size:.95rem;margin-top:1rem;">
+          E queremos celebrar com você, que faz parte dessa história.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section id="info">
+    <div class="inner">
+      <div class="info-header reveal">
+        <p class="section-label">O grande dia</p>
+        <h2 class="section-title" style="color:var(--cream);">Todos os detalhes</h2>
+        <div class="gold-rule"></div>
+      </div>
+      <div class="cards-grid">
+
+        <div class="card reveal reveal-delay-1">
+          <span class="card-icon">📅</span>
+          <p class="card-title">Data</p>
+          <p class="card-main">14 de Junho<br>de 2025</p>
+          <p class="card-sub">Sábado, às 18h00<br>Cerimônia + Recepção</p>
+          <span class="card-tag">Salve na agenda</span>
+        </div>
+
+        <div class="card reveal reveal-delay-2">
+          <span class="card-icon">📍</span>
+          <p class="card-title">Local</p>
+          <p class="card-main">Sítio<br>Bella Vista</p>
+          <p class="card-sub">Estrada do Mirante, 1.450<br>Nova Lima — MG</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Sítio+Bella+Vista+Nova+Lima+MG" target="_blank" class="card-tag">Ver no Maps</a>
+        </div>
+
+        <div class="card reveal reveal-delay-3">
+          <span class="card-icon">👔</span>
+          <p class="card-title">Traje</p>
+          <p class="card-main">Esporte<br>Fino</p>
+          <p class="card-sub">Confortável o suficiente<br>para dançar até as 4h da manhã.</p>
+        </div>
+
+        <div class="card card-highlight reveal reveal-delay-4">
+          <span class="card-icon">🍖🍻</span>
+          <p class="card-title">Contribuição</p>
+          <p class="card-main">400g de carne<br>& o que beber</p>
+          <p class="card-sub">Sim, você leu certo. Traga sua peça favorita pro churrasqueiro e uma bebida pra brindar. Vai ser épico.</p>
+          <span class="card-tag">Obrigatório & delicioso</span>
+        </div>
+
+        <div class="card reveal reveal-delay-1">
+          <span class="card-icon">🎵</span>
+          <p class="card-title">Música</p>
+          <p class="card-main">Ao vivo +<br>DJ</p>
+          <p class="card-sub">Banda pra cerimônia e DJ pra arrasar na festa. Playback zero — do começo ao fim.</p>
+        </div>
+
+        <div class="card reveal reveal-delay-2">
+          <span class="card-icon">🌙</span>
+          <p class="card-title">Duração</p>
+          <p class="card-main">Até o sol<br>nascer</p>
+          <p class="card-sub">Ou até o DJ pedir socorro. Quem for dormir cedo, bem… a gente entende. Mais ou menos.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria">
+    <div class="inner">
+      <div class="gallery-header reveal">
+        <p class="section-label">Memórias</p>
+        <h2 class="section-title" style="color:var(--cream);">Nossa galeria</h2>
+        <div class="gold-rule"></div>
+      </div>
+      <div class="gallery-grid">
+
+        <div class="gallery-item tall reveal">
+          <div class="gallery-ph">
+            <img src="https://picsum.photos/400/800?random=1" alt="Ensaio no campo">
+          </div>
+          <div class="gallery-overlay"><span>Ensaio</span></div>
+        </div>
+
+        <div class="gallery-item reveal reveal-delay-1">
+          <div class="gallery-ph">
+            <img src="https://picsum.photos/400/400?random=2" alt="Pedido de casamento">
+          </div>
+          <div class="gallery-overlay"><span>O momento</span></div>
+        </div>
+
+        <div class="gallery-item reveal reveal-delay-2">
+          <div class="gallery-ph">
+            <img src="https://picsum.photos/400/400?random=3" alt="Pôr do sol juntos">
+          </div>
+          <div class="gallery-overlay"><span>Pôr do sol</span></div>
+        </div>
+
+        <div class="gallery-item wide reveal reveal-delay-1">
+          <div class="gallery-ph">
+            <img src="https://picsum.photos/800/400?random=4" alt="Os anéis">
+          </div>
+          <div class="gallery-overlay"><span>Os anéis</span></div>
+        </div>
+
+        <div class="gallery-item reveal reveal-delay-3">
+          <div class="gallery-ph">
+            <img src="https://picsum.photos/400/400?random=5" alt="Brinde especial">
+          </div>
+          <div class="gallery-overlay"><span>Celebração</span></div>
+        </div>
+
+        <div class="gallery-item reveal reveal-delay-2">
+          <div class="gallery-ph">
+            <img src="https://picsum.photos/400/400?random=6" alt="Nossa primeira dança">
+          </div>
+          <div class="gallery-overlay"><span>Dança</span></div>
+        </div>
+
+        <div class="gallery-item reveal reveal-delay-1">
+          <div class="gallery-ph">
+            <img src="https://picsum.photos/400/400?random=7" alt="O terceiro integrante">
+          </div>
+          <div class="gallery-overlay"><span>Família</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section id="final">
+    <div class="inner">
+      <div class="final-ornament reveal">♡</div>
+      <h2 class="final-title reveal reveal-delay-1">
+        Sua presença é<br><em>quase obrigatória.</em>
+      </h2>
+      <div class="gold-rule reveal reveal-delay-2"></div>
+      <p class="final-body reveal reveal-delay-3">
+        Juntamos <strong>amor, carne boa, música ao vivo</strong> e a melhor empresa possível — <strong>você</strong>. Falta apenas uma coisa: a sua confirmação. 😄
+        <br><br>
+        Não nos decepcione. O churrasqueiro está aguardando.
+      </p>
+      <button class="btn-confirm reveal reveal-delay-4" id="btnConfirm">
+        <span>💌 Confirmar presença</span>
+      </button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Ana &amp; Lucas · 14.06.2025 · Com amor e muita carne 🍖</p>
+  </footer>
+
+</div><!-- /main-content -->
+
+<!-- Confirm Modal -->
+<div class="confirm-modal" id="confirmModal">
+  <div class="modal-box">
+    <div class="modal-icon">💌</div>
+    <h3 class="modal-title">Confirmar presença</h3>
+    <form class="confirm-form" id="confirmForm">
+      <div class="form-group">
+        <label for="guestName">Nome completo</label>
+        <input type="text" id="guestName" placeholder="Digite seu nome" required>
+      </div>
+      <div class="form-group">
+        <label>Você é o responsável ou acompanhante?</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="guestType" value="responsavel" required>
+            <span>Sou o responsável da família</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="guestType" value="acompanhado" required>
+            <span>Estou acompanhado do responsável</span>
+          </label>
+        </div>
+      </div>
+      <div class="form-group hidden" id="responsavelGroup">
+        <label for="responsavelName">Nome do responsável</label>
+        <input type="text" id="responsavelName" placeholder="Digite o nome do responsável">
+      </div>
+      <button type="submit" class="btn-whatsapp">
+        <span>📱 Enviar pelo WhatsApp</span>
+      </button>
+    </form>
+    <button class="modal-close" id="modalClose">Fechar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
